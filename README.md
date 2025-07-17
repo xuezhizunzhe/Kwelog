@@ -1,2 +1,2 @@
 # Kwelog
-稳扎稳打
+Good good study, day day up !
