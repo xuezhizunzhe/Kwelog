@@ -1,5 +1,55 @@
 system:
   ip: ""
-  port: 8080
+  port: 8081
   gin_mode: dev
   env: dev
+log:
+  app: kwelog_server
+  dir: log
+db:
+- user: root
+  password: "1234"
+  host: 192.168.11.130
+  port: 3306
+  db: kwelog
+  debug: false
+  source: mysql
+- user: root     # 从库
+  password: "1234"
+  host: 192.168.11.130
+  port: 3307
+  db: kwelog
+  debug: false
+  source: mysql
+jwt:
+  expire: 240
+  secret: xxx
+  issuer: Kirito
+site:
+  siteInfo:
+    title: 枫枫知道
+    logo: /uploads/images001//a407230d177c94545926e7ec43c904c5.png
+    beian: ""
+    mode: 1
+  project:
+    title: 枫枫知道
+    icon: /uploads/images001//c5008e50d68448675425a7eea0bb973e.png
+    webPath: uploads/index.html
+  seo:
+    keywords: 枫枫
+    description: 枫枫知道
+  about:
+    siteDate: ""
+    qq: /uploads/images001//15824d2d9c3c9a25e909bf2752dc1bb0.png
+    wechat: /uploads/images001//15824d2d9c3c9a25e909bf2752dc1bb0.png
+    gitee: ""
+    bilibili: ""
+    github: ""
+  login:
+    qqLogin: true
+    usernamePwdLogin: true
+    emailLogin: true
+    captcha: false
+  article:
+    noExamine: false
+    commentLine: 7
